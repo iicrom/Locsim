@@ -1,0 +1,33 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+.kotlin/
+build/
+captures/
+
+# Local configuration (SDK path, API keys, signing secrets)
+local.properties
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.hprof
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Signing material
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# macOS
+.DS_Store

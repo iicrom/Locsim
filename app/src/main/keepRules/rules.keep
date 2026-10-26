@@ -1,0 +1,9 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+#
+# 离线地图包通过 ArchiveFileFactory 反射创建 Archive 实现，必须保留这些类及其无参构造。
+-keep class org.osmdroid.tileprovider.modules.ArchiveFileFactory { *; }
+-keep class org.osmdroid.tileprovider.modules.DatabaseFileArchive { *; }
+-keep class org.osmdroid.tileprovider.modules.MBTilesFileArchive { *; }
+-keep class org.osmdroid.tileprovider.modules.ZipFileArchive { *; }
+-keep class org.osmdroid.tileprovider.modules.GEMFFileArchive { *; }
